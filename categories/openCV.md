@@ -1,7 +1,7 @@
 ---
 layout: page
 title: openCV
-permalink: /blog/categories/opencv/
+permalink: /blog/categories/openCV/
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>
