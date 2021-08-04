@@ -13,10 +13,10 @@ kwon:
 
 kim:
    name: 김 강희 (test)
-   username: xplor4r
-   site: https://sujaykundu.com
+   username: kim
+   site: none
    avatar: kim.jpeg
-   bio: "Full Stack Web Developer, based in Bangalore, India"
+   bio: "Samsung Electronics"
    email: mail@sujaykundu.com
    social:
       - title: "github"
