@@ -8,11 +8,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
 urls:
-    - text: Home
+    - text: 홈
       url: /
-    - text: Blog
+    - text: 블로그
       url: /blog
-    - text: About Me
+    - text: 소개 # About Me
       url: /about
 #    - text: Gallery
 #      url: /gallery
