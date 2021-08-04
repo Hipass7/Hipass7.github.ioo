@@ -3,7 +3,7 @@ name: 김 강희 (test)
 username: kim
 bio: "블로그에 가끔 업로드하는 사진의 촬영과 편집을 담당합니다."
 site: none
-avatar: profile.png
+avatar: kim.jpeg
 email: kanghee@naver.com
 social:
     - title: "github"
