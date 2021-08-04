@@ -4,18 +4,18 @@ kwon:
    username: kwon
    bio: "이 블로그의 관리자이며 컴퓨터 비전을 공부하고 있습니다."
    site: https://hipass7.github.io
-   avatar: car.jpg
+   avatar: kwon.jpg
    email: qjsro8763@daum.net
    social:
     - title: "github"
       url: "https://github.com/hipass7"
         
 
-xplor4r:
+kim:
    name: 김 강희 (test)
    username: xplor4r
    site: https://sujaykundu.com
-   avatar: xplor4r.png
+   avatar: kim.png
    bio: "Full Stack Web Developer, based in Bangalore, India"
    email: mail@sujaykundu.com
    social:
