@@ -1,10 +1,10 @@
 ---
-name: Sujay Kundu
-username: xplor4r
-bio: "Full Stack Web Developer, based in Bangalore, India"
-site: https://sujaykundu.com
-avatar: xplor4r.png
-email: mail@sujaykundu.com
+name: 김 강희 (test)
+username: Kim
+bio: "블로그에 가끔 업로드하는 사진의 촬영과 편집을 담당합니다."
+site: none
+avatar: profile.png
+email: kanghee@naver.com
 social:
     - title: "github"
       url: "https://github.com/sujaykundu777"
