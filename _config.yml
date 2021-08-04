@@ -10,27 +10,27 @@ baseurl: "" # the subpath of your site, e.g. /blog
 urls:
     - text: Home
       url: /
-    - text: About Me
-      url: /about
     - text: Blog
       url: /blog
+    - text: About Me
+      url: /about
 #    - text: Gallery
 #      url: /gallery
 #    - text: Shop
 #      url : /shop
-    - text: Contact
-      url : /contact
+#    - text: Contact
+#      url : /contact
 
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: car.jpg
 author: hipass7
-author_bio: 안녕하세요. 이곳은 About 창에서 About 칸을 채우는 공간입니다.
+author_bio: 안녕하세요. 개발자가 되고 싶은 코딩꿈나무 hipass7입니다.
 author_email: "qjsro8763@daum.net"
 author_location: 대한민국
 author_website_url: "https://hipass7.github.io"
-typewrite-text: 어서오세요. 아직 글이 하나도 없으니 네이버로 가세요.
+typewrite-text: 어서오세요. 아직 글이 하나도 없으니 네이버로 당장 가세요.
 
 # Experiences
 author_work_experiences:
