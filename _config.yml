@@ -61,7 +61,7 @@ author_project_details:
               - project_thumbnail: kbo.png
                 project_title: Python 텀프로젝트
                 project_description: 나이에 따른 KBO리그 선수들의 성적 분석
-                project_url: https://github.com/hipass7
+                project_url: https://hipass7.github.io/2
                 visibility: true
               - project_thumbnail: hack4r.PNG
                 project_title: Hack4r
