@@ -8,7 +8,7 @@ category: jekyll
 summary: Demo Content using Netlify CMS
 keywords: using netlify cms with devlopr-jekyll, devlopr jekyll netlify cms, how to use netlify cms
 permalink: /blog/using-netlify-cms/
-visibility: false
+published: false
 ---
 # Hello World ,
 
