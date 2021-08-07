@@ -14,7 +14,8 @@ layout: default
                               <!-- <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="author-profile-img"> -->
                               <h4 class="card-title">{{ post.title }}</h4>
 
-                              <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%b %-d, %Y" }}</h6>
+<!--                               <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%b %-d, %Y" }}</h6> -->
+                              <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%F" }}</h6>
                               <p class="card-text">{{ post.summary }} </p>
 <!--                            원래 위치는 여기임! <a href="{{ post.url | prepend: site.baseurl }}" data-disqus-identifier="{{ post.url }}" class="btn btn-dark btn-lg">보기</a>
                               <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}"></span> -->
