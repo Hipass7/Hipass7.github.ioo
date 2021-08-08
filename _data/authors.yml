@@ -1,7 +1,7 @@
 # Add Authors here
-kwon:
-   name: 권 인회
-   username: kwon
+hipass7:
+   name: hipass7
+   username: hipass7
    bio: "이 블로그의 관리자이며 컴퓨터 비전을 공부하고 있습니다."
    site: https://hipass7.github.io
    avatar: kwon.jpeg
@@ -11,20 +11,20 @@ kwon:
       url: "https://github.com/hipass7"
         
 
-kim:
-   name: 김 강희 (test)
-   username: kim
-   site: none
-   avatar: kim.jpeg
-   bio: "Samsung Electronics"
-   email: mail@sujaykundu.com
-   social:
-      - title: "github"
-        url: "https://github.com/sujaykundu777"
-      - title: "linkedin"
-        url: "https://www.linkedin.com/in/sujaykundu"
-      - title: "youtube"
-        url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
-      - title: "facebook"
-        url: "https://www.facebook.com/sujay.kundu2"
+# kim:
+#    name: 김 강희 (test)
+#    username: kim
+#    site: none
+#    avatar: kim.jpeg
+#    bio: "Samsung Electronics"
+#    email: mail@sujaykundu.com
+#    social:
+#       - title: "github"
+#         url: "https://github.com/sujaykundu777"
+#       - title: "linkedin"
+#         url: "https://www.linkedin.com/in/sujaykundu"
+#       - title: "youtube"
+#         url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
+#       - title: "facebook"
+#         url: "https://www.facebook.com/sujay.kundu2"
 
