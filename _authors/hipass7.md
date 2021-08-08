@@ -8,5 +8,7 @@ email: qjsro8763@daum.net
 social:
     - title: "github"
       url: "https://github.com/hipass7"
+    - title: "youtube"
+      url: "https://www.youtube.com/channel/UCK-s-RkD42qbrFiZ8FHyqXg"
 
 ---
