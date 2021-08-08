@@ -26,9 +26,9 @@ urls:
 
 author_logo: car.jpg
 author: hipass7
-author_bio: 안녕하세요. 개발자가 되고 싶은 코딩꿈나무 hipass7입니다.
+author_bio: 안녕하세요. 개발자가 되고 싶은 코딩꿈나무 hipass7입니다. <br /> 코딩을 본격적으로 접한 2020년부터 습득한 지식을 기록하기 위한 공간입니다. <br /> 이 블로그는 2021년 8월에 개설되었으며, 한글 위주로 작성되었습니다.
 author_email: "qjsro8763@daum.net"
-author_location: 대한민국
+author_location: 대한민국 경기도 수원시
 author_website_url: "https://hipass7.github.io"
 typewrite-text: 어서오세요. 아직 글이 하나도 없으니 네이버로 당장 가세요.
 
