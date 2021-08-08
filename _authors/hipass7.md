@@ -1,7 +1,7 @@
 ---
 name: hipass7 (관리자)
 username: hipass7
-bio: "이 블로그의 관리자이며 컴퓨터 비전을 공부하고 있습니다."
+bio: "자세한 사항은 '소개' 탭을 확인해주세요."
 site: https://hipass7.github.io
 avatar: kwon.jpg
 email: qjsro8763@daum.net
