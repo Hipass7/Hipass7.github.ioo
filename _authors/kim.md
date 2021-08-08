@@ -1,4 +1,4 @@
----
+<!-- ---
 name: 김 강희 (test)
 username: kim
 bio: "블로그에 가끔 업로드하는 사진의 촬영과 편집을 담당합니다."
@@ -14,4 +14,4 @@ social:
       url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
     - title: "facebook"
       url: "https://www.facebook.com/sujay.kundu2"
----
+--- -->
