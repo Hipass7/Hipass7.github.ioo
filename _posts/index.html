@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가까운 식당 중 랜덤</title>
+    <style>
+        #p1, #p2{
+            color:rgb(0, 0, 255);
+        }
+        footer{
+            text-align:center;
+        }
+        h1, h2{
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map" style="width:100%;height:500px;"></div>
+    <h1></h1>
+    <h2></h2>
+    <p id='p1'></p>
+    <a id='p2' style="text-align:center;"></a>
+    <ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-urrw24i6qx4n" 
+ data-ad-width   = "320" 
+ data-ad-height  = "100"></ins> 
+<script type="text/javascript" src="https://t1.daumcdn.net/kas/static/ba.min.js" async></script>
+ <footer>
+ <p>&copy; Kingkang's Company 2020. All Rights Reserved.</p>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript"
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=3777f81f85d7699d9404890e7cbd7175"></script>
+    <script>
+        alert("위치 사용 팝업창을 반드시 '허용'하여야 사용 가능합니다.")
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 5 // 지도의 확대 레벨 
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        // HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
+        if (navigator.geolocation) {
+
+            // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+            navigator.geolocation.getCurrentPosition(function (position) {
+
+                var lat = position.coords.latitude, // 위도
+                    lon = position.coords.longitude; // 경도
+
+                $.ajax({
+                    method: "GET",
+                    url: "https://dapi.kakao.com/v2/local/search/category.json",
+                    data: { category_group_code: 'FD6', x: lon, y: lat, radius: 3000, sort: 'distance' },
+                    headers: { Authorization: 'KakaoAK 2c8596f5fe176df1250f5b3e1d459bd8' },
+
+                })
+                    .done(function (msg) {
+                        console.log(msg);
+                        var math = Math.random();
+                        var random = Math.floor(math*10);
+                        $("#p1").text(msg.documents[random].phone);
+                        $("#p2").text(msg.documents[random].place_url);
+                        $("#p2").attr("href", msg.documents[random].place_url);
+                        $("h1").text(msg.documents[random].place_name);
+                        $("h2").text(msg.documents[random].road_address_name);
+
+                        var locPosition = new kakao.maps.LatLng(msg.documents[random].y, msg.documents[random].x), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+                            message = '<div style="padding:5px;width:150px;">오늘은 여기서 먹어요!</div>'; // 인포윈도우에 표시될 내용입니다
+
+                        // 마커와 인포윈도우를 표시합니다
+                        displayMarker(locPosition, message);
+
+
+                    });
+
+            })} else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+
+                    var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),
+                    message = 'geolocation을 사용할수 없어요..'
+        
+    displayMarker(locPosition, message);
+                }
+
+// 지도에 마커와 인포윈도우를 표시하는 함수입니다
+function displayMarker(locPosition, message) {
+
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        map: map,
+                        position: locPosition
+                    });
+
+                    var iwContent = message, // 인포윈도우에 표시할 내용
+                        iwRemoveable = true;
+
+                    // 인포윈도우를 생성합니다
+                    var infowindow = new kakao.maps.InfoWindow({
+                        content: iwContent,
+                        removable: iwRemoveable
+                    });
+
+                    // 인포윈도우를 마커위에 표시합니다 
+                    infowindow.open(map, marker);
+
+                    // 지도 중심좌표를 접속위치로 변경합니다
+                    map.setCenter(locPosition);
+                }   
+    </script>
+    <!-- <script>
+    var sub = document.getElementById('mainn');
+    document.addEventListener('submit', function (event) {
+        event.preventDefault();
+        init();
+    })
+    </script> -->
+    <!-- <script>
+            function init() {
+                var qe = sub.value;
+                $.ajax({
+                    method: "GET",
+                    url: "https://dapi.kakao.com/v2/local/search/category.json",
+                    data: { category_group_code: 'FD6', x: '127.0241441636728', y: '37.25197305589033', radius: 1000, sort: 'distance' },
+                    headers: { Authorization: 'KakaoAK 2c8596f5fe176df1250f5b3e1d459bd8' },
+
+                })
+                    .done(function (msg) {
+                        console.log(msg);
+                        $("#1").text(msg.documents[0].x);
+                        $("#2").text(msg.documents[0].y);
+                        $("h1").text(msg.documents[0].place_name);
+                        $("h2").text(msg.documents[0].road_address_name);
+
+                    });
+            };
+    </script> -->
+</body>
+</html>
