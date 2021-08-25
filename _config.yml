@@ -40,12 +40,12 @@ author_work_experiences:
               designation: 없다고요 (역할1)
               description: 설명
               visibility: false #이걸 바꾸면 보이게 됨
-            - company_name: 없음 (회사이름2)
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: 없다고요 (역할2)
-              description: 설명
-              visibility: false
+            - company_name: 예정
+              company_logo:
+              company_url:
+              designation: 
+              description:
+              visibility: true
 
 # Education
 author_education_details:
