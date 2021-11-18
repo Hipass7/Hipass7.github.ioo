@@ -65,7 +65,7 @@ author_project_details:
                 visibility: true
               - project_thumbnail: /assets/img/14/2.jpg
                 project_title: 2021 KHUTHON - AI로 극복하는 재난
-                project_description: 바른 말 고운 말 음성 분석 프로그램
+                project_description: 좋은 말 고운 말 음성 분석 프로그램
                 project_url: https://hipass7.github.io/blog/14
                 visibility: true
 
