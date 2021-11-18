@@ -63,11 +63,11 @@ author_project_details:
                 project_description: 나이에 따른 KBO리그 선수들의 성적 분석
                 project_url: https://hipass7.github.io/blog/2
                 visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
-                visibility: false
+              - project_thumbnail: /assets/img/14/2.jpg
+                project_title: 2021 KHUTHON - AI로 극복하는 재난
+                project_description: 바른 말 고운 말 음성 분석 프로그램
+                project_url: https://hipass7.github.io/blog/14
+                visibility: true
 
 # social links
 twitter_username: null
